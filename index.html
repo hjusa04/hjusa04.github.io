@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S&H Global Trading Corp. | AUSTIN, TX</title>
+    <style>
+        :root { --navy: #001f3f; --gold: #D4AF37; --white: #ffffff; --light-gray: #f4f4f4; }
+        body, html { margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; color: #333; background: #fff; line-height: 1.6; }
+        
+        /* 헤더 스타일 */
+        header { 
+            background: rgba(255, 255, 255, 0.95); height: 80px; padding: 0 5%; display: flex; align-items: center; 
+            position: fixed; top: 0; width: 100%; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
+        .logo { height: 45px; margin-right: 15px; }
+        .company-name { font-size: 22px; font-weight: 800; color: var(--navy); letter-spacing: -1px; }
+
+        /* 히어로 섹션 (영상 배경) */
+        .hero { 
+            position: relative; height: 70vh; display: flex; align-items: center; justify-content: center; 
+            overflow: hidden; background: var(--navy); color: white; text-align: center; margin-top: 80px;
+        }
+        .video-bg { 
+            position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; 
+            transform: translate(-50%, -50%); object-fit: cover; z-index: 1; filter: brightness(35%);
+        }
+        .hero-text { position: relative; z-index: 2; padding: 20px; }
+        .hero-text h1 { font-size: clamp(2rem, 6vw, 4rem); margin-bottom: 10px; font-weight: 900; }
+        .hero-text p { font-size: 1.2rem; color: var(--gold); font-weight: 500; }
+
+        .container { max-width: 1100px; margin: 60px auto; padding: 0 20px; }
+        .section-title { font-size: 28px; color: var(--navy); border-left: 5px solid var(--gold); padding-left: 15px; margin-bottom: 40px; font-weight: 800; }
+
+        /* 카드 그리드 스타일 */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-bottom: 60px; }
+        .card { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border: 1px solid #eee; }
+        .card h3 { color: var(--navy); margin-top: 0; border-bottom: 2px solid var(--gold); display: inline-block; padding-bottom: 5px; }
+        .card ul { padding-left: 18px; margin-top: 15px; }
+        .card li { margin-bottom: 10px; font-size: 0.95rem; color: #555; }
+
+        /* 4번 전략 섹션 (컬러) */
+        .strategy-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .strategy-card { background: var(--light-gray); padding: 20px; border-radius: 10px; border-top: 4px solid var(--navy); }
+        .strategy-card h4 { margin: 0 0 10px 0; color: var(--navy); font-size: 1.1rem; }
+        .strategy-card p { font-size: 0.85rem; margin: 0; color: #666; }
+
+        /* 6번 안정화 섹션 (강조) */
+        .reliability { background: var(--navy); color: white; padding: 50px; border-radius: 20px; margin-top: 60px; }
+        .reliability h2 { color: var(--gold); margin-top: 0; }
+        .rel-item { margin-bottom: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; }
+        .rel-item:last-child { border-bottom: none; }
+        .rel-item strong { color: var(--gold); font-size: 1.1rem; display: block; margin-bottom: 5px; }
+        .rel-item p { margin: 0; opacity: 0.9; }
+
+        footer { background: #111; color: #999; padding: 50px 20px; text-align: center; font-size: 0.9rem; line-height: 1.8; }
+        .highlight { color: var(--gold); font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="S&H Logo" class="logo" onerror="this.style.display='none'">
+    <span class="company-name">S&H GLOBAL TRADING CORP.</span>
+</header>
+
+<section class="hero">
+    <video autoplay muted loop playsinline class="video-bg">
+        <source src="promo.mp4" type="video/mp4">
+    </video>
+    <div class="hero-text">
+        <h1>Connecting Continents</h1>
+        <p>Global Strategic Partner for U.S. Distribution</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="grid">
+        <div class="card">
+            <h3>1. About Us (개요)</h3>
+            <ul>
+                <li><strong>대표이사:</strong> 한주희 (Jeffrey Han)</li>
+                <li><strong>설립일:</strong> 2014년</li>
+                <li><strong>주소:</strong> 13740 N Highway 183 STE K1, AUSTIN, TX 78750</li>
+                <li><strong>주요 역할:</strong> 구매사의 이익 최우선, 품질 보증 및 클레임 해결 책임</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>2. Vision & Values (비전)</h3>
+            <ul>
+                <li><strong>비전:</strong> 미국 소비 트렌드 맞춤형 소비재 수입 유통 전문</li>
+                <li><strong>핵심 가치:</strong> 우수한 품질 제품의 공급 프랜차이즈화</li>
+                <li><strong>미래 전략:</strong> 미국 내 유통 및 거래 라인 구축 및 공고화</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>3. Business Type (사업 영역)</h3>
+            <p><strong>수입 및 유통:</strong> 수익 센터 제공 및 품질 보증 확보</p>
+            <p><strong>비즈니스 컨설팅:</strong> 미국 법인 설립 및 시장 진출 전문 컨설팅</p>
+        </div>
+        <div class="card">
+            <h3>5. Organizations (조직 구성)</h3>
+            <p>수익 및 영업 기획 / 영업 및 판매 / 검수 및 관리 (철저한 품질 및 물류 운영)</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">4. Products & Strategy (상세 운영 전략)</h2>
+    <div class="strategy-grid">
+        <div class="strategy-card">
+            <h4>친환경 식품</h4>
+            <p>자연 식재료, 밀키트 중점. 트렌드 제품 및 물류 조건 확보를 통한 이익 보존</p>
+        </div>
+        <div class="strategy-card">
+            <h4>가정 잡화</h4>
+            <p>고효율 생활 잡화 및 트렌디 디자인. 직소싱을 통한 원가 절감 전략</p>
+        </div>
+        <div class="strategy-card">
+            <h4>화장품 & 뷰티</h4>
+            <p>글로벌 기능성 제품 및 안전성 입증 라인. 인증 준수 및 정품 보증</p>
+        </div>
+        <div class="strategy-card">
+            <h4>IT & 사무용품</h4>
+            <p>사무 기기 및 고성능 IT 주변기기. 대량 구매를 통한 경쟁력 확보</p>
+        </div>
+        <div class="strategy-card">
+            <h4>레포츠 & 보안</h4>
+            <p>내구성 검증된 라이프스타일 기어 및 시큐리티 가젯. 탄력적 재고 운영</p>
+        </div>
+    </div>
+
+    <div class="reliability">
+        <h2>6. Stabilization of Transactions (거래의 안정화)</h2>
+        <div class="rel-item">
+            <strong>a) 철저한 비공개 원칙 (Strict Confidentiality)</strong>
+            <p>구매처의 요구에 완벽히 부응하여 세부 내역의 외부 노출을 철저히 차단합니다.</p>
+        </div>
+        <div class="rel-item">
+            <strong>b) 예측 가능한 결과 확보 (Predictable Operations)</strong>
+            <p>확고한 계약 체결을 통해 판매 물량 사전 예측 및 안정적 운영 도모.</p>
+        </div>
+        <div class="rel-item">
+            <strong>c) 맞춤형 계약 관계 (Tailored Partnership)</strong>
+            <p>거래처별 사업 형태와 요구 사항에 최적화된 맞춤형 계약 관계 구축.</p>
+        </div>
+        <div class="rel-item">
+            <strong>d) 거래처 형태별 구분 관리</strong>
+            <p>도매 회사 / 소매점 대상 배송사 / 대형 유통사 공급 밴더사 체계적 관리.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>
+        <strong>S&H Global Trading Corp.</strong><br>
+        13740 N Highway 183 STE K1, AUSTIN, TX 78750<br>
+        President: JU HEE (Jeffrey) HAN | 202-679-0800 | consulod@gmail.com<br>
+        <span style="font-size: 0.8rem; opacity: 0.6;">© 2026 S&H Global Trading Corp. All Rights Reserved.</span>
+    </p>
+</footer>
+
+</body>
+</html>
